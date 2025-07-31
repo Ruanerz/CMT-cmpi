@@ -37,7 +37,7 @@
 }
 
 body{
-    background-image: url('BACK.png');  
+    background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(224, 40, 136, 0.6)), url('BACK.png');  
   background-repeat: no-repeat;
   background-position: top center;     /* o center center */
   background-attachment: fixed;
