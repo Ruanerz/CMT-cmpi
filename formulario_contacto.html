@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto CMPI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .container-form-contacto-cempi { margin: 2rem auto; max-width: 900px; background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .form-cempi-contacto label { font-weight: 500; }
+        .title-grupo-form { margin-top: 2rem; margin-bottom: 1rem; font-size: 1.2rem; font-weight: bold; }
+        .hr-form-cempi { margin: 2rem 0; }
+        .btn-submit-contacto-cempi { background: #007bff; color: #fff; font-weight: bold; padding: 0.5rem 2rem; border-radius: 5px; border: none; }
+        .btn-submit-contacto-cempi:hover { background: #0056b3; }
+        .label-autorizacion-contacto { margin-left: 0.5rem; }
+        .text-radio-cempi { margin-right: 0.5rem; }
+        .g-recaptcha { margin: 1rem auto; }
+    </style>
+
+<link rel="stylesheet" media="all" href="https://cmt-global.org/assets/application-e00780aad1863e91c81ed36db81e7dc2fb2a07163da2c687ac1c5737e8f719d5.css" data-turbolinks-track="reload">
+<link rel="icon" href="https://cmt-global.org/assets/cmt-ffc3b9ad56208d77e11facb31852d5ba0ec131ecb34752a41186e87ab7235a20.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/ngcIAHyEnHQZZIKkyKneDTW3/recaptcha__es_419.js" crossorigin="anonymous" integrity="sha384-F+j+62uhXC+7iLw3AExjrDWZpZh6wmAfj7H7mLpN3UiQ9fvbyhklyNJqCw1sGj44" nonce="your_nonce_value"></script><script async="" src="//cse.google.com/adsense/search/async-ads.js" nonce="your_nonce_value"></script><script src="https://connect.facebook.net/en_US/sdk.js?hash=8d8164da9a5ec47ae1ad6d5dccce8f28" async="" crossorigin="anonymous"></script><script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/0b00c3eb/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-KRVQSZE4X5&amp;cx=c&amp;gtm=45je57s1v870286554za200&amp;tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~105103161~105103163~105124543~105124545"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=AW-481372395&amp;cx=c&amp;gtm=45je57s1v870286554za200&amp;tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~105103161~105103163~105124543~105124545"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-V962EWQJX7&amp;cx=c&amp;gtm=45je57s1v870286554za200&amp;tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~105103161~105103163~105124543~105124545"></script><script src="https://www.youtube.com/iframe_api"></script><script src="https://cmt-global.org/assets/application-1c3d6d645c1f62b8dc2527e08ac12906812f76f63913eacea3dd3f88166dbe35.js" data-turbolinks-track="reload"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="cmpi-style.css">
+</head>
+<body style="background: #f5f5f5;">
+
+  <nav class="main-menu">
+    <ul>
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="formulario_contacto.html">CONTACTO</a></li>
+    </ul>
+  </nav>
+
+ 
+
+<div class="col-12 col-lg-8 container-form-contacto-cempi" style="text-align: center;">
+    <h1 style="color: #FAFAFA;">Estás a un paso de llevar un CMPI a tu comunidad</h1>
+    <p style="color: #FAFAFA;">Nuestro equipo evaluará tu solicitud y te contactará en un plazo de 24–48 horas hábiles para confirmar el interés, resolver dudas y compartir los siguientes pasos. 
+        Si representas a una organización, gobierno local o colectivo, este es el canal para comenzar.</p>
+</div>
+<div class="col-12 col-lg-8 container-form-contacto-cempi">
+ <form class="form-cempi-contacto" action="/es/enviar_formulario_cempi" accept-charset="UTF-8" data-remote="true" method="post">
+  <input name="utf8" type="hidden" value="✓">
+  <input type="hidden" name="authenticity_token" value="">
+  <input name="_usec" type="hidden" value="">
+  <div class="row">
+    <h5 class="title-grupo-form">DATOS GENERALES</h5>
+    <div class="form-group form-group-cempi col-12">
+      <label class="label-form-cempi">Nombre completo: </label>
+      <input type="text" name="nombre" id="nombre" value="" required class="form-control input-text-form-cempi" autocomplete="off">
+    </div>
+    <div class="form-group form-group-cempi col-12">
+      <label class="label-form-cempi">Cargo o función: </label>
+      <input type="text" name="cargo_o_funcion" id="cargo_o_funcion" value="" required class="form-control input-text-form-cempi" autocomplete="off">
+    </div>
+    <div class="form-group form-group-cempi col-12">
+      <label class="label-form-cempi">Nombre de la organización/entidad: </label>
+      <input type="text" name="nombre_organizacion" id="nombre_organizacion" value="" required class="form-control input-text-form-cempi" autocomplete="off">
+    </div>
+    <div class="form-group form-group-cempi col-12 col-md-6 col-xl-4">
+      <label class="label-form-cempi">Teléfono de contacto: </label>
+      <input type="text" name="telefono" id="telefono" value="" required class="form-control input-text-form-cempi" pattern="\d{10}" title="Debe tener exactamente 10 dígitos" oninput="this.value = this.value.replace(/[^0-9]/g, '')" maxlength="10" autocomplete="off">
+    </div>
+    <div class="form-group form-group-cempi col-12 col-md-6 col-xl-6">
+      <label class="label-form-cempi">Correo electrónico: </label>
+      <input type="email" name="correo_e" id="correo_e" value="" required class="form-control input-text-form-cempi" autocomplete="off">
+    </div>
+    <div class="col-12">
+      <hr class="hr-form-cempi">
+    </div>
+    <h5 class="title-grupo-form">DATOS DE LA COMUNIDAD A BENEFICIAR</h5>
+    <div class="form-group form-group-cempi col-12 col-md-5 col-lg-4">
+      <label class="label-form-cempi">Estado: </label>
+      <select name="estado_id" id="estado_select" class="form-select input-text-form-cempi" required>
+        <option value="" label=" "></option>
+        <option value="01">Aguascalientes</option>
+        <option value="02">Baja California</option>
+        <option value="03">Baja California Sur</option>
+        <option value="04">Campeche</option>
+        <option value="05">Coahuila de Zaragoza</option>
+        <option value="06">Colima</option>
+        <option value="07">Chiapas</option>
+        <option value="08">Chihuahua</option>
+        <option value="09">CDMX</option>
+        <option value="10">Durango</option>
+        <option value="11">Guanajuato</option>
+        <option value="12">Guerrero</option>
+        <option value="13">Hidalgo</option>
+        <option value="14">Jalisco</option>
+        <option value="15">México</option>
+        <option value="16">Michoacán de Ocampo</option>
+        <option value="17">Morelos</option>
+        <option value="18">Nayarit</option>
+        <option value="19">Nuevo León</option>
+        <option value="20">Oaxaca</option>
+        <option value="21">Puebla</option>
+        <option value="22">Querétaro</option>
+        <option value="23">Quintana Roo</option>
+        <option value="24">San Luis Potosí</option>
+        <option value="25">Sinaloa</option>
+        <option value="26">Sonora</option>
+        <option value="27">Tabasco</option>
+        <option value="28">Tamaulipas</option>
+        <option value="29">Tlaxcala</option>
+        <option value="30">Veracruz de Ignacio de la Llave</option>
+        <option value="31">Yucatán</option>
+        <option value="32">Zacatecas</option>
+      </select>
+    </div>
+    <div class="form-group form-group-cempi col-12 col-md-5 col-lg-4">
+      <label class="label-form-cempi">Municipio: </label>
+      <select name="municipio_id" id="municipio_select" class="form-select input-text-form-cempi" required>
+        <option value="" label=" "></option>
+      </select>
+    </div>
+    <div class="form-group form-group-cempi col-12 d-flex align-items-center flex-column flex-lg-row mt-3">
+      <label class="label-form-cempi col-12 col-md-5 col-lg-5 col-xl-4">Población total estimada: </label>
+      <div class="col-12 col-md-5 col-lg-5">
+        <input type="text" name="poblacion_estimada" id="poblacion_estimada" value="" required class="form-control input-text-form-cempi" oninput="this.value = this.value.replace(/[^0-9]/g, '')" autocomplete="off">
+      </div>
+    </div>
+    <div class="form-group form-group-cempi col-12">
+      <label class="label-form-cempi">Principales problemas de salud en la comunidad: </label>
+      <textarea name="problemas_comunidad" id="problemas_comunidad" required class="form-control input-text-form-cempi" rows="5"></textarea>
+    </div>
+    <div class="col-12">
+      <hr class="hr-form-cempi">
+    </div>
+    <h5 class="title-grupo-form">INTERÉS EN EL CMPI</h5>
+    <div class="form-group form-group-cempi col-12">
+      <label class="label-form-cempi">¿Por qué crees que un CMPI sería beneficioso para tu comunidad?</label>
+      <textarea name="razon_beneficio_cempi" id="razon_beneficio_cempi" required class="form-control input-text-form-cempi" rows="3"></textarea>
+    </div>
+    <div class="form-group form-group-cempi col-12">
+      <label class="label-form-cempi">¿Cuenta tu comunidad con algún apoyo o alianza con actores locales (ONGs, gobierno, sector privado)?</label>
+      <div class="d-flex flex-row gap-3">
+        <div class="d-flex flex-row gap-1">
+          <label for="radio_apoyo_local_si" class="text-radio-cempi">Sí</label>
+          <input type="radio" id="radio_apoyo_local_si" class="radio_apoyo_local" name="comunidad_cuenta_con_apoyo_local" value="1" required>
+        </div>
+        <div class="d-flex flex-row gap-1">
+          <label for="radio_apoyo_local_no" class="text-radio-cempi">No</label>
+          <input type="radio" id="radio_apoyo_local_no" class="radio_apoyo_local" name="comunidad_cuenta_con_apoyo_local" value="0" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group form-group-cempi col-12">
+      <label class="label-form-cempi">En caso afirmativo, por favor describe las alianzas:</label>
+      <textarea name="descripcion_alianzas_locales" id="descripcion_alianzas_locales" class="form-control input-text-form-cempi" rows="3"></textarea>
+    </div>
+    <div class="form-group mt-3 col-12 d-flex align-items-center">
+      <input type="radio" id="radio_autorizacion_contacto" name="acepto_autorizacion_contacto" value="1" class="radio_autorizacion_contacto" required>
+      <label for="radio_autorizacion_contacto" class="form-check-label label-form-cempi label-autorizacion-contacto ml-2">Autorizo a Congregación Mariana Trinitaria a contactarme para dar seguimiento a esta solicitud</label>
+    </div>
+    <div class="col-12 d-flex flex-column align-items-center justify-content-center mt-1 form-group">
+      <script src="https://www.recaptcha.net/recaptcha/api.js" async defer></script>
+      <div data-sitekey="6LeAFr4lAAAAAFvW5h1nlDdWQQAzAnVVO1lr4XfO" class="g-recaptcha"></div>
+      <p class="d-block text-danger mb-0 d-none" style="font-weight: 600;" id="text_error_recaptcha">Por favor completa el reCAPTCHA.</p>
+    </div>
+    <div class="col-12 mt-5 d-flex justify-content-center">
+      <button name="button" type="submit" class="btn btn-submit-contacto-cempi" id="submit_contact_cempi" data-disable-with="Enviando...">Enviar</button>
+    </div>
+  </div>
+</form>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const radios = document.querySelectorAll('input[name="comunidad_cuenta_con_apoyo_local"]');
+        const textarea = document.getElementById('descripcion_alianzas_locales');
+        radios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                if (this.id === 'radio_apoyo_local_si') {
+                    textarea.required = true;
+                } else {
+                    textarea.required = false;
+                }
+            });
+        });
+    });
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,401 @@
+
+
+
+  /* Estilos para el menú de navegación */
+.main-menu {
+  background-color: white;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.main-menu ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.main-menu ul li a {
+  text-decoration: none;
+  color: #CF3C86; /* Usando el color rosa del tema */
+  font-weight: 700;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.main-menu ul li a:hover {
+  color: #8675f7; /* Un color de hover que combine */
+}
+
+body{
+    background-image: url('BACK.png');  
+  background-repeat: no-repeat;
+  background-position: top center;     /* o center center */
+  background-attachment: fixed;
+  /* “Solo el ancho”: la imagen se escala al 100% del ancho, altura proporcional */
+  /* Suele ser mejor 100% que 100vw para evitar scroll horizontal por la barra de desplazamiento */
+  background-size: 100% auto;
+  }
+
+  .btn-botones-cmpi:hover{
+      transform: scale(1.1);
+      background-color: #E062A1;
+      color: #FAFAFA;
+  }
+  .title-section-cempi{
+      color: #CF3C86;
+      font-weight: 800;
+  }
+
+  .btn-botones-cmpi {
+    color: #cf3c86;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    font-weight: 800;
+    margin: 20px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+    border: solid 2px #cf3c86; 
+  }
+
+  .btn-botones-cmpi-big {
+    color: #ffffff;
+    background-color: #CF3C86;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    padding: 50px 200px;
+    font-weight: 800;
+    margin: 20px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+  }
+  .btn-botones-cmpi-big:hover{
+      transform: scale(1.1);
+      background-color: #8675f7;
+      color: #FAFAFA;
+  }
+  
+  #svg_doctora_cempi{
+      position: relative;
+      width: 105%;
+  }
+  .text-info-cempi{
+      font-weight: 500;
+      text-align: left;
+  }
+  .logo_cempi_inicio{
+      width: 100%;
+  }
+  .item-beneficio-cempi{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(250, 250, 250, 0.9);
+      width: 80%;
+      min-height: 130px;
+      padding: 10px 20px;
+      border-radius: 15px;
+  }
+  .container-item-beneficio-cempi{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+  }
+  .item-beneficio-cempi img{
+      width: 30%;
+      margin-bottom: 5px;
+  }
+  .text-item-beneficio-cempi{
+      text-align: center;
+      font-weight: 800;
+      margin-bottom: 0;
+  }
+  
+    .idioma-item {
+        color: #CF3C86;
+    }
+
+    .seccion-fondo {
+  position: relative;
+  background-image: url('https://plus.unsplash.com/premium_photo-1664302416614-d6b0702d6449?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNvJTIwcGFjaWVudGV8ZW58MHx8MHx8fDA%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  z-index: 0;
+}
+.seccion-fondo::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(31, 30, 30, 0.2);
+  z-index: 1;
+  pointer-events: none;
+}
+.seccion-fondo > * {
+  position: relative;
+  z-index: 2;
+}
+
+  .img-objetivos-cempi{
+      width: 90%;
+      height: auto;
+  }
+  #objetivos{
+      background-color: #ffffff4d;
+  }
+  .lista-objetivos-cempi{
+      font-weight: 500;
+      font-size: 1rem;
+      text-align: justify;
+  }
+
+  .lista-objetivos-cempi li{
+      margin-bottom: 12px;
+  }
+
+    .item-tipo-cempi {
+        display: grid;
+        grid-template-columns: 25% 1fr; /* Primer elemento 25% y el segundo ocupa el resto */
+        width: 100%;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .title-item-cempi {
+        background-color: #CF3C86;
+        color: #FAFAFA;
+        padding: 20px;
+        font-weight: 800;
+        font-size: 1.4rem;
+        /*height: 85%;*/
+        margin-right: 50px;
+        border-radius: 15px;
+        box-sizing: border-box;
+        /*z-index: 2;*/
+    }
+
+    .desc-item-cempi {
+        background-color: rgba(250, 250, 250, 0.9);
+        text-align: justify;
+        padding: 60px 100px;    
+        border-radius: 15px;
+        font-size: 1rem;
+        height: 100%;
+        font-weight: 500;
+        /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);*/
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        #tipos_cempi{
+            padding: 15px;
+        }
+        .item-tipo-cempi{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .title-item-cempi{
+            width: 100%;
+            margin-right: 0;
+            padding: 10px;
+            text-align: center;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .desc-item-cempi{
+            padding: 40px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    }
+   
+    #esquema_accion{
+        background-color: #ffffff;
+        padding: 100px 5px;
+    }
+    .container-info-tabla-esquema, .container-mapa-esquema-accion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-info-tabla-esquema-accion{
+        width: 80%;
+    }
+    .img-mapa-esquema-accion{
+        width: 90%;
+    }
+
+  #contacto_comunidad_cempi{
+      background-color: #ffffff;
+  }
+  .text-llevamos_cempi_comunidad{
+      text-align: center;
+      font-weight: 500;
+      font-size: 1rem;
+  }
+  .container-form-contacto-cempi{
+      background-color: #8176ED;
+      padding: 4rem 4rem 3rem 4rem;
+      border-radius: 25px;
+  }
+  @media (max-width: 480px) {
+      .container-form-contacto-cempi{
+          padding: 1rem;
+      }
+  }
+
+  .title-grupo-form{
+      color: #FAFAFA;
+      font-size: 1.4rem;
+      font-weight: 800;
+  }
+  .form-group-cempi{
+      margin-bottom: 15px;
+  }
+  .label-form-cempi{
+      color: #FAFAFA;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 3px;
+  }
+  .input-text-form-cempi{
+      border-radius: 25px;
+  }
+  .hr-form-cempi{
+      height: 3px;
+      background-color: #FAFAFA;
+      width: 100%;
+      margin: 10px 0 20px 0;
+      border: 0;
+  }
+  .radio_apoyo_local, .radio_autorizacion_contacto{
+      width: 20px;
+      height: 20px;
+      accent-color: #8176ED;
+  }
+  .radio_autorizacion_contacto{
+      margin-right: 10px;
+  }
+  .label-autorizacion-contacto{
+      font-weight: 400;
+      font-size: 0.9rem;
+      line-height: normal;
+  }
+  .text-radio-cempi{
+      color: #FAFAFA;
+      font-weight: 500;
+  }
+  .check-autorizacion-contacto-cempi{
+      margin-right: 10px;
+      margin-left: 5px;
+  }
+  .custom-checkbox .custom-control-label::before {
+      border-radius: 999px;
+  }
+  .btn-submit-contacto-cempi{
+      color: #FAFAFA;
+      background-color: #CF3C86;
+      padding: 5px 60px;
+      border-radius: 25px;
+  }
+  .btn-submit-contacto-cempi:hover{
+      color: #CF3C86;
+      background-color: #FAFAFA;
+  }
+  
+    .img-puesta_en_marcha-cempi{
+        width: 90%;
+        height: auto;
+    }
+    .parrafos-puesta-en-marcha-cempi{
+        font-weight: 500;
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+
+    .parrafos-puesta-en-marcha-cempi li{
+        margin-bottom: 18px;
+    }
+    .lista-unidades-responsables-cempi li{
+        font-weight: 700;
+    }
+    
+    .g-recaptcha div div iframe {
+        height: 100px !important;
+        width: auto !important;
+    }
+
+
+    .video-box {
+        max-width: 1400px;     /* límite de ancho */
+        width: 100%;          /* ocupa el 100% hasta el máximo */
+        margin: 0 auto;       /* centra horizontalmente */
+        padding: 50px 0px 100px;           /* opcional */
+      }
+      
+      .video-box video {
+        width: 100%;
+        height: auto;         /* mantiene proporción */
+        display: block;       /* elimina espacios en línea */
+        border: 0;
+        border-radius: 8px;   /* opcional */
+      }
+
+      .beneficios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(250, 250, 250, 0.9);
+        width: 60%;
+        min-height: 130px;
+        padding: 10px 20px;
+        border-radius: 15px;
+        color: #CF3C86;
+      }
+
+      .item-beneficio{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .item-div {
+        padding: 10px;
+      }
+
+      a.beneficios {
+        text-decoration: none;
+      }
+      a.beneficios:visited {
+        text-decoration: none;
+      }
+      a.beneficios:hover {
+        text-decoration: none;
+        background-color: #CF3C86;
+        color: #FAFAFA;
+      }
+      a.beneficios:active {
+        text-decoration: none;
+      }
+
+      .iframe-style {
+        width: 100%;
+        height: 750px;
+    }
