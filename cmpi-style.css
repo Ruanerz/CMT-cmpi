@@ -399,3 +399,34 @@ body{
         width: 100%;
         height: 750px;
     }
+
+    .interModalLimite {
+        width: 100% !important;
+    }
+
+    .interModalTitulo {
+        background-color:#f2f2f2;
+        padding: 10px;
+        margin: 30px;
+        border-radius: 15px;
+    }
+
+    .interModal {
+        background-color:#f2f2f2;
+        padding: 10px;
+        margin: 30px;
+        border-radius: 15px;
+    }
+
+    .classCaracteristicas {
+        background-color:#e1e1e1;
+        padding: 10px;
+        margin: 30px;
+        border-radius: 15px;
+    }
+
+    .classCaracteristicasIMG {
+        background-color:#e1e1e1;
+        margin: 30px;
+        border-radius: 15px;
+    }
