@@ -9,34 +9,23 @@
   <link rel="icon" href="https://cmt-global.org/assets/cmt-ffc3b9ad56208d77e11facb31852d5ba0ec131ecb34752a41186e87ab7235a20.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Centro de Medicina Preventiva Integral - CMPI</title>
-  
- 
-  
-  <script src="https://cmt-global.org/assets/application-1c3d6d645c1f62b8dc2527e08ac12906812f76f63913eacea3dd3f88166dbe35.js" data-turbolinks-track="reload"></script>
-
-  
-
 
   <link rel="stylesheet" href="cmpi-style.css">
-
-
-
-
-
 </head>
 
-<body>
+<body class="body-index">
   <nav class="main-menu">
     <ul>
       <li><a href="index.html">INICIO</a></li>
-      <li><a href="formulario_contacto.html">CONTACTO</a></li>
+      <li><a href="alternativa.html">ALTERNATIVA</a></li>
+      <li><a href="formulario_contacto.html">CONTACTO</a></li>      
     </ul>
   </nav>
 
   <div class="container-fluid">
   </div>
 
-  <div class="seccion-fondoxxx">
+  
     <div class="logoblanco icon-princ" style="margin-top: 50px;">
       <a href="/es"><img src="https://cmt-global.org/assets/logorosa-b580acb2d875780bd6c395e75ef118bf2876911953179c72a10f819d96d5e6cf.png"></a>
       <div class="text-center idioma-select d-none d-xl-block mt-2" style="color: #CF3C86;">
@@ -44,6 +33,9 @@
         <a class="idioma-item" href="/en/cempi">EN</a>
       </div>
     </div>
+
+
+    
 
     <!-- LOGO y textos -->
     <section style="margin-top: 100px;">
@@ -60,16 +52,21 @@
         </div>
       </div>
 
+      <div class="d-flex justify-content-center align-items-center flex-wrap">
+        <a href="alternativa.html" class="btn btn-botones-cmpi-big">Conoce más de nuestra Área de Salud</a>
+      </div>
+
       <!-- VIDEO cmpi -->
       <div class="video-box">
         <div class="video-embed">
-          <iframe class="iframe-style" src="https://www.youtube.com/embed/emBJYQAnb8Q" title="CMPI" loading="lazy" allowfullscreen></iframe>
+          <iframe class="iframe-style" style="border-radius: 35px;" src="https://www.youtube.com/embed/emBJYQAnb8Q" title="CMPI" loading="lazy" allowfullscreen></iframe>
         </div>
       </div>
 
       <!-- BOTONES fichas -->
-      <div class="container-inicio-beneficios d-flex justify-content-center" style="margin-bottom:6%">
-        <div class="row col-12" style="margin-bottom:6%">
+       <div class="fondoServicios">
+      <div class="container-inicio-beneficios d-flex justify-content-center">
+        <div class="row col-12">
 
           <div style="text-align: center; margin-bottom: 5%;color: #FAFAFA;"><h2 style="font-weight: 800;">Conoce qué servicios podemos llevar a tu comunidad gracias a un CMPI</h2></div>
 
@@ -163,8 +160,9 @@
 
         </div>
       </div>
+    </div>
     </section>
-  </div>
+ 
 
   <div style="background-color: #ffffff;padding: 100px 5px;">
     <!-- FONDO BLANCO -->
@@ -228,7 +226,7 @@
     </div>
   </section>
 
-  <section id="esquema_accion" class="row p-3 mb-5 d-flex justify-content-center">
+  <section id="esquema_accion" class="row p-3 d-flex justify-content-center">
     <div class="col-12 col-xxl-8" style="padding: 100px 5px;">
       <h1 class="title-section-cempi mt-4">ESQUEMA DE ACCIÓN</h1>
       <div class="row">
@@ -242,13 +240,13 @@
     </div>
   </section>
 
-  <section id="puesta_en_marcha" class="row mb-5" style=" padding: 100px 0px; ">
-    <div class="col-12 col-lg-5">
-      <img class="img-puesta_en_marcha-cempi" src="https://cmt-global.org/assets/cempi/puesta_en_marcha_farmacia-8bab9f0affe0148026b65624015ea936660469dbc02d857030d7c97beca68c51.png">
-    </div>
-    <div class="col-10 col-lg-7" style="background-color: #ffffffe3;border-radius: 20px;">
+  <div class="fondoMarcha">
+  <section id="puesta_en_marcha" class="row mb-5 justify-content-center" style=" padding: 100px 0px; ">    
+    <div class="col-10 col-lg-7" style="background-color: rgba(255, 255, 255, 0.7);border-radius: 20px;text-align: center;margin-bottom: 20px;">
       <h1 class="title-section-cempi mt-4 mb-4 p-3">PUESTA EN MARCHA:</h1>
-      <div class="col-12 col-lg-9 parrafos-puesta-en-marcha-cempi p-3">
+    </div>
+    <div class="col-10 col-lg-7" style="background-color: rgba(255, 255, 255, 0.7);border-radius: 20px;">
+      <div class="col-12 parrafos-puesta-en-marcha-cempi p-3">
         <p>
           El proyecto CMPI forma parte de la cadena de salud, la cual tiene cobertura en los 32 estados de la República Mexicana. Es necesario contar con dos unidades responsables:
         </p>
@@ -262,6 +260,7 @@
       </div>
     </div>
   </section>
+  </div>
 
   <section id="contacto_comunidad_cempi" class="row p-3 d-flex justify-content-center">
     <div class="col-12 col-xxl-8" style="padding: 100px 5px;">
@@ -306,22 +305,31 @@
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-header" style="display: block;">
-          <h4 class="modal-title" id="modalConsultaExternaLabel" style="color: #ef3887;">Consulta Externa</h4>
+          <h2 class="modal-title tituloModal" id="modalConsultaExternaLabel">Consulta Externa</h2>
           <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-
-          <div class="interModal">
-          <p>La consulta externa se refiere a la atención médica que se brinda a pacientes
-            que no están hospitalizados. Es un servicio ambulatorio donde se realizarán
-            diagnósticos, tratamientos y seguimientos de diversas condiciones médicas. Se
-            llevará a cabo en un entorno adaptado para este tipo de atención.
-            </p>
+          
+          <div class="row align-items-center mb-4">
+            <div class="col-md-6">
+              <div class="interModalTitulo">
+                <p>La consulta externa se refiere a la atención médica que se brinda a pacientes
+                  que no están hospitalizados. Es un servicio ambulatorio donde se realizarán
+                  diagnósticos, tratamientos y seguimientos de diversas condiciones médicas. Se
+                  llevará a cabo en un entorno adaptado para este tipo de atención.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="classCaracteristicasIMG">
+                <img src="consultaexterna.jpg" class="img-fluid imgRadius">
+              </div>
+            </div>
           </div>
-          <div class="classCaracteristicasIMG"><img src="consultaexterna.jpg" class="img-fluid"><br> <br></div>
 
+          <div class="fondoModalCMPI">
           <h3 style="text-align: center;">Características principales de la consulta externa:</h3>
           <br>
           <div class="classCaracteristicas">
@@ -350,7 +358,7 @@
             derivado a la consulta con especialista.
           </p>
           </div>
-
+          </div>
         </div>
       </div>
     </div>
@@ -358,28 +366,37 @@
 
 
    <!-- ----------------------------------odontologia---------------------------------- -->
- 
 
-   <div class="modal fade" id="modalOdontologia" tabindex="-1" role="dialog" aria-labelledby="modalOdontologia" aria-hidden="true">
+
+  <div class="modal fade" id="modalOdontologia" tabindex="-1" role="dialog" aria-labelledby="modalOdontologia" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-header" style="display: block;">
-          <h4 class="modal-title" id="modalOdontologiaLabel" style="color: #ef3887;">Odontología</h4>
+          <h2 class="modal-title tituloModal" id="modalOdontologiaLabel">Odontología</h2>
           <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
+          
 
-          <div class="interModal">
-          <p>La consulta externa de odontología se refiere a la atención odontológica que se
-            brinda a pacientes que no están hospitalizados, es decir, a pacientes
-            ambulatorios. Esta atención puede incluir evaluación, diagnóstico, tratamiento y
-            seguimiento de problemas bucales.
-            </p>
+          <div class="row align-items-center mb-4">
+            <div class="col-md-6">
+              <div class="interModalTitulo">
+                <p>La consulta externa de odontología se refiere a la atención odontológica que se
+                  brinda a pacientes que no están hospitalizados, es decir, a pacientes
+                  ambulatorios. Esta atención puede incluir evaluación, diagnóstico, tratamiento y
+                  seguimiento de problemas bucales.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="classCaracteristicasIMG">
+                <img src="odontologia.jpg" class="img-fluid imgRadius">
+              </div>
+            </div>
           </div>
-          <div class="classCaracteristicasIMG"><img src="odontologia.jpg" class="img-fluid"><br> <br></div>
-
+          <div class="fondoModalCMPI">
           <h3 style="text-align: center;">En más detalle:</h3>
           <br>
           <div class="classCaracteristicas">
@@ -407,14 +424,13 @@
           
           <div class="classCaracteristicas"> 
           <h5>Prevención:</h5>
-          <p>Además del tratamiento de problemas existentes, la consulta externa
-            también puede enfocarse en la prevención de enfermedades bucales a
-            través de la educación del paciente y la aplicación de medidas
+          <p>Además del tratamiento de problemas existentes, la consulta externa también se
+            enfoca en la prevención de enfermedades bucales a través de la educación del paciente y la aplicación de medidas
             preventivas como limpiezas dentales y aplicación de fluor.
           </p>
           </div>
 
-          
+          </div>
         </div>
       </div>
     </div>
@@ -427,24 +443,31 @@
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-header" style="display: block;">
-          <h4 class="modal-title" id="modalNutricionLabel" style="color: #ef3887;">Nutricion</h4>
+          <h2 class="modal-title tituloModal" id="modalNutricionLabel">Nutricion</h2>
           <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
 
-          <div class="interModal">
-          <p>La consulta externa de nutrición es una atención ambulatoria donde un
-            profesional de la nutrición evalúa y brinda asesoramiento personalizado sobre
-            alimentación y hábitos saludables a pacientes que no requieren
-            hospitalización. Su objetivo principal es mantener o mejorar el estado
-            nutricional del paciente, prevenir enfermedades relacionadas con la
-            alimentación y promover un estilo de vida saludable.
-            </p>
+          <div class="row align-items-center mb-4">
+            <div class="col-md-6">
+              <div class="interModalTitulo">
+                <p>La consulta externa de nutrición es una atención ambulatoria donde un
+                  profesional de la nutrición evalúa y brinda asesoramiento personalizado sobre
+                  alimentación y hábitos saludables a pacientes que no requieren
+                  hospitalización. El objetivo es mejorar la calidad de vida a través de una
+                  alimentación y promover un estilo de vida saludable.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="classCaracteristicasIMG">
+                <img src="nutricion.jpeg" class="img-fluid imgRadius">
+              </div>
+            </div>
           </div>
-          <div class="classCaracteristicasIMG"><img src="nutricion.jpeg" class="img-fluid"><br> <br></div>
-
+          <div class="fondoModalCMPI">
           <h3 style="text-align: center;">¿En qué consiste la consulta externa de nutrición?</h3>
           <br>
           <div class="classCaracteristicas">
@@ -525,7 +548,7 @@
           <p>El nutricionista brinda orientación y motivación para lograr cambios
             duraderos en los hábitos alimentarios.</p>
           </div>
-
+          </div>
         </div>
       </div>
     </div>
@@ -533,30 +556,37 @@
 
   
   <!-- ----------------------------------Psicología---------------------------------- -->
-  
+
 
   <div class="modal fade" id="modalPsicologia" tabindex="-1" role="dialog" aria-labelledby="modalPsicologia" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-header" style="display: block;">
-          <h4 class="modal-title" id="modalPsicologiaLabel" style="color: #ef3887;">Psicología</h4>
+          <h2 class="modal-title tituloModal" id="modalPsicologiaLabel">Psicología</h2>
           <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
 
-          <div class="interModal">
-          <p>La consulta externa de psicología clínica se refiere a la atención psicológica que
-            se brinda a personas que no requieren hospitalización, sino que acuden a un
-            consultorio para recibir tratamiento, evaluación o seguimiento de problemas
-            emocionales, conductuales o mentales. Es un servicio ambulatorio que se
-            enfoca en la prevención, diagnóstico y tratamiento de trastornos psicológicos,
-            así como en la promoción del bienestar mental.
-            </p>
+          <div class="row align-items-center mb-4">
+            <div class="col-md-6">
+              <div class="interModalTitulo">
+                <p>La consulta externa de psicología clínica se refiere a la atención psicológica que
+                  se brinda a personas que no requieren hospitalización, sino que acuden a un
+                  consultorio para recibir tratamiento, evaluación o seguimiento de problemas
+                  emocionales, conductuales o mentales. Se enfoca en el bienestar emocional,
+                  así como en la promoción del bienestar mental.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="classCaracteristicasIMG">
+                <img src="psicologia.jpg" class="img-fluid imgRadius">
+              </div>
+            </div>
           </div>
-          <div class="classCaracteristicasIMG"><img src="psicologia.jpg" class="img-fluid"><br> <br></div>
-
+          <div class="fondoModalCMPI">
           <h3 style="text-align: center;">Más detalladamente:</h3>
           <br>
           <div class="classCaracteristicas">
@@ -597,36 +627,45 @@
             intervención temprana.
           </p>
           </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
 
-  
   <!-- ----------------------------------Referencia a Especialidades---------------------------------- -->
-  
+
+
   <div class="modal fade" id="modalEspecialidades" tabindex="-1" role="dialog" aria-labelledby="modalEspecialidades" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-header" style="display: block;">
-          <h4 class="modal-title" id="modalEspecialidadesLabel" style="color: #ef3887;">Especialidades</h4>
+          <h2 class="modal-title tituloModal" id="modalEspecialidadesLabel">Especialidades</h2>
           <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
 
-          <div class="interModal">
-          <p>La consulta externa de especialidades se refiere a la atención médica
-            ambulatoria, no hospitalaria, que se brinda a pacientes que requieren atención
-            especializada. En este tipo de consulta, los pacientes acuden a la clínica para ser
-            evaluados por un médico especialista, quien realiza un diagnóstico, tratamiento
-            y seguimiento de su condición de salud.
-            </p>
+          <div class="row align-items-center mb-4">
+            <div class="col-md-6">
+              <div class="interModalTitulo">
+                <p>La consulta externa de especialidades se refiere a la atención médica
+                  ambulatoria, no hospitalaria, que se brinda a pacientes que requieren atención
+                  especializada. En este tipo de consulta, los pacientes acuden a la clínica para ser
+                  evaluados por un médico especialista, quien se encarga del diagnóstico
+                  y seguimiento de su condición de salud.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="classCaracteristicasIMG">
+                <img src="especialidad.jpg" class="img-fluid imgRadius">
+              </div>
+            </div>
           </div>
-          <div class="classCaracteristicasIMG"><img src="especialidad.jpg" class="img-fluid"><br> <br></div>
-
+          <div class="fondoModalCMPI">
           <h3 style="text-align: center;">Características principales de la consulta externa de especialidad:</h3>
           <br>
           <div class="classCaracteristicas">
@@ -664,6 +703,7 @@
             especialistas o por iniciativa propia, dependiendo del sistema de salud.
           </p>
           </div>
+          </div>
         </div>
       </div>
     </div>
@@ -671,30 +711,38 @@
 
 
     <!-- ---------------------------------- Laboratorio---------------------------------- -->
- 
+
 
     <div class="modal fade" id="modalLaboratorio" tabindex="-1" role="dialog" aria-labelledby="modalLaboratorio" aria-hidden="true">
       <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header" style="display: block;">
-            <h4 class="modal-title" id="modalLaboratorioLabel" style="color: #ef3887;">Laboratorio</h4>
+            <h2 class="modal-title tituloModal" id="modalLaboratorioLabel">Laboratorio</h2>
             <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
   
-            <div class="interModal">
-            <p>La consulta externa de laboratorio clínico se refiere al servicio ambulatorio
-              donde se realizan exámenes de laboratorio solicitados por médicos o
-              profesionales de la salud para el diagnóstico, seguimiento o prevención de
-              enfermedades en pacientes que no requieren hospitalización. Es un
-              componente esencial de la atención médica que permite evaluar el estado de
-              salud del paciente a través de análisis de muestras biológicas.
-              </p>
+            <div class="row align-items-center mb-4">
+              <div class="col-md-6">
+                <div class="interModalTitulo">
+                  <p>La consulta externa de laboratorio clínico se refiere al servicio ambulatorio
+                    donde se realizan exámenes de laboratorio solicitados por médicos o
+                    profesionales de la salud para el diagnóstico, seguimiento o prevención de
+                    enfermedades en pacientes que no requieren hospitalización. Es un
+                    componente esencial de la atención médica que permite evaluar el estado de
+                    salud del paciente a través de análisis de muestras biológicas.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="classCaracteristicasIMG">
+                  <img src="laboratorio.jpg" class="img-fluid imgRadius">
+                </div>
+              </div>
             </div>
-            <div class="classCaracteristicasIMG"><img src="laboratorio.jpg" class="img-fluid"><br> <br></div>
-  
+            <div class="fondoModalCMPI">
             <h3 style="text-align: center;">Más detalladamente:</h3>
             <br>
             <div class="classCaracteristicas">
@@ -731,6 +779,7 @@
               historia clínica del paciente, contribuyendo a una atención médica
               completa y personalizada.
             </p>
+            </div>
             </div>
           </div>
         </div>
@@ -814,5 +863,7 @@
 
 
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

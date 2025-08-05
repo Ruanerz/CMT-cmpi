@@ -36,15 +36,22 @@
   color: #8675f7; /* Un color de hover que combine */
 }
 
-body{
-    background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(224, 40, 136, 0.6)), url('BACK.png');  
+/* Estilos de fondo para páginas específicas */
+.body-index {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(224, 40, 136, 0.6)), url('BACK.png');
   background-repeat: no-repeat;
-  background-position: top center;     /* o center center */
+  background-position: top center;
   background-attachment: fixed;
-  /* “Solo el ancho”: la imagen se escala al 100% del ancho, altura proporcional */
-  /* Suele ser mejor 100% que 100vw para evitar scroll horizontal por la barra de desplazamiento */
   background-size: 100% auto;
-  }
+}
+
+.body-alternativa {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(134, 117, 247, 0.8)), url('fundadora.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: 100% auto;
+}
 
   .btn-botones-cmpi:hover{
       transform: scale(1.1);
@@ -126,16 +133,25 @@ body{
         color: #CF3C86;
     }
 
-    .seccion-fondo {
+    .fondoMarcha {
   position: relative;
-  background-image: url('https://plus.unsplash.com/premium_photo-1664302416614-d6b0702d6449?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWVkaWNvJTIwcGFjaWVudGV8ZW58MHx8MHx8fDA%3D');
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(224, 40, 136, 0.6)), url('marcha.png');  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 60vh;
   z-index: 0;
+  padding: 100px;
 }
-.seccion-fondo::before {
+
+/* Aumentar el ancho de los modales */
+@media (min-width: 1200px) {
+  .modal-xl {
+    max-width: 90% !important;
+  }
+}
+
+.fondoMarcha::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -143,10 +159,56 @@ body{
   z-index: 1;
   pointer-events: none;
 }
-.seccion-fondo > * {
+.fondoMarcha > * {
   position: relative;
   z-index: 2;
 }
+
+.fondoServicios {
+    position: relative;
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(224, 40, 136, 1));  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    padding: 100px;
+  }
+  
+  .fondoServicios::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(31, 30, 30, 0.2);
+    z-index: 1;
+    pointer-events: none;
+  }
+  .fondoServicios > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  .fondoServiciosSalud {
+    position: relative;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(134, 117, 247, 0.8));  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    padding: 100px;
+  }
+  
+  .fondoServiciosSalud::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(31, 30, 30, 0.2);
+    z-index: 1;
+    pointer-events: none;
+  }
+  .fondoServiciosSalud > * {
+    position: relative;
+    z-index: 2;
+  }
 
   .img-objetivos-cempi{
       width: 90%;
@@ -406,9 +468,9 @@ body{
 
     .interModalTitulo {
         background-color:#f2f2f2;
-        padding: 10px;
-        margin: 30px;
+        padding: 20px;
         border-radius: 15px;
+        font-size:x-large;
     }
 
     .interModal {
@@ -418,15 +480,43 @@ body{
         border-radius: 15px;
     }
 
+    .interModalTitulo {
+        background-color:#ffd0e7;
+        padding: 20px;
+        margin: 0% 5%;
+        border-radius: 15px;
+    }
+
     .classCaracteristicas {
-        background-color:#ffb9db;
+        background-color:#ffffff;
         padding: 10px;
         margin: 30px;
         border-radius: 15px;
     }
 
     .classCaracteristicasIMG {
-        background-color:#e1e1e1;
-        margin: 30px;
-        border-radius: 15px;
+        margin: 4% 10%;
     }
+
+    .imgRadius {
+        border-radius: 25px;
+    }
+    
+
+    .fondoModalCMPI {
+        position: relative;
+        background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(224, 40, 136, 1));  
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 0;
+        padding: 100px;
+        border-radius: 25px;
+      }
+
+      .tituloModal {
+        color: #ef3887;
+        text-align: center;
+        font-weight:bold;
+        font-size: 2rem;
+      }
